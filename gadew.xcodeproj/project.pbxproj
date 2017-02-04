@@ -17,6 +17,7 @@
 		621A7C051E22E49A0022551D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621A7C031E22E49A0022551D /* LaunchScreen.storyboard */; };
 		623021071E39B87B00AE090E /* Dataservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623021061E39B87B00AE090E /* Dataservice.swift */; };
 		623021091E39BC7E00AE090E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623021081E39BC7E00AE090E /* FeedVC.swift */; };
+		62B976E31E41071D002056D5 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B976E21E41071D002056D5 /* SwiftKeychainWrapper.framework */; };
 		62C654D51E28A06A00D01C9C /* GoogleAnalyticsServicesiOS_3.17 in Resources */ = {isa = PBXBuildFile; fileRef = 62C654D41E28A06A00D01C9C /* GoogleAnalyticsServicesiOS_3.17 */; };
 		62C76D831E39C46E0036EB46 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C76D821E39C46E0036EB46 /* Post.swift */; };
 		62CF81831E2311F100C1A5F0 /* Screen Shot 2017-01-05 at 6.22.41 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CF81821E2311F100C1A5F0 /* Screen Shot 2017-01-05 at 6.22.41 PM.png */; };
@@ -47,6 +48,7 @@
 		621A7C061E22E49A0022551D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623021061E39B87B00AE090E /* Dataservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataservice.swift; sourceTree = "<group>"; };
 		623021081E39BC7E00AE090E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = SOURCE_ROOT; };
+		62B976E21E41071D002056D5 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = "../../Library/Developer/Xcode/DerivedData/gadew-cujytlogzzxefkcxvyjwwptciozm/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"; sourceTree = "<group>"; };
 		62C654D41E28A06A00D01C9C /* GoogleAnalyticsServicesiOS_3.17 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAnalyticsServicesiOS_3.17; sourceTree = "<group>"; };
 		62C76D821E39C46E0036EB46 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		62CF81821E2311F100C1A5F0 /* Screen Shot 2017-01-05 at 6.22.41 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-01-05 at 6.22.41 PM.png"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62B976E31E41071D002056D5 /* SwiftKeychainWrapper.framework in Frameworks */,
 				458BBA9A6F01622F68B2DC61 /* Pods_gadew.framework in Frameworks */,
 				62D20A091E2BC3E80063BB82 /* FBSDKCoreKit.framework in Frameworks */,
 				62D20A0C1E2BC3E80063BB82 /* FBSDKShareKit.framework in Frameworks */,
@@ -185,6 +188,7 @@
 		E8B6E264B6FEFB8E4975C957 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62B976E21E41071D002056D5 /* SwiftKeychainWrapper.framework */,
 				62D20A031E2BC3E80063BB82 /* FBNotifications.framework */,
 				62D20A041E2BC3E80063BB82 /* FBSDKCoreKit.framework */,
 				62D20A051E2BC3E80063BB82 /* FBSDKLoginKit.framework */,
@@ -231,6 +235,7 @@
 					621A7BF61E22E49A0022551D = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = SL789UC42D;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -399,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -444,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -465,7 +470,7 @@
 					"$(PROJECT_DIR)/GoogleAnalyticsServicesiOS_3.17",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gadew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,7 +490,7 @@
 					"$(PROJECT_DIR)/GoogleAnalyticsServicesiOS_3.17",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gadew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
